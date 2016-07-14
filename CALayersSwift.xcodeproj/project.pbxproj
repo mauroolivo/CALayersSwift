@@ -16,6 +16,7 @@
 		3468FC7A1D36851500607BF8 /* PortraitContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468FC791D36851500607BF8 /* PortraitContainerView.swift */; };
 		347B59E11D37A0770046B829 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347B59E01D37A0770046B829 /* AnimationView.swift */; };
 		347B59E31D37A4630046B829 /* DegreesToRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347B59E21D37A4630046B829 /* DegreesToRadians.swift */; };
+		3481D7951D37DD660078455F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3481D7941D37DD660078455F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3468FC791D36851500607BF8 /* PortraitContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitContainerView.swift; sourceTree = "<group>"; };
 		347B59E01D37A0770046B829 /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		347B59E21D37A4630046B829 /* DegreesToRadians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DegreesToRadians.swift; path = ../DegreesToRadians.swift; sourceTree = "<group>"; };
+		3481D7941D37DD660078455F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		3468FC571D366E0200607BF8 = {
 			isa = PBXGroup;
 			children = (
+				3481D7941D37DD660078455F /* README.md */,
 				3468FC621D366E0200607BF8 /* CALayersSwift */,
 				3468FC611D366E0200607BF8 /* Products */,
 			);
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3481D7951D37DD660078455F /* README.md in Sources */,
 				347B59E31D37A4630046B829 /* DegreesToRadians.swift in Sources */,
 				3468FC7A1D36851500607BF8 /* PortraitContainerView.swift in Sources */,
 				347B59E11D37A0770046B829 /* AnimationView.swift in Sources */,
