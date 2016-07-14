@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CALayersSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-4x-24z" userLabel="portrait container" customClass="PortraitContainerView" customModule="CALayersSwift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q09-U7-cKY">
+                                        <rect key="frame" x="210" y="60" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="q09-U7-cKY" secondAttribute="height" multiplier="1:1" id="DdN-am-MXR"/>
+                                            <constraint firstAttribute="width" constant="180" id="RhR-PG-R9g"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="q09-U7-cKY" firstAttribute="top" secondItem="qwH-4x-24z" secondAttribute="top" constant="60" id="S9k-Hb-hfv"/>
+                                    <constraint firstAttribute="height" constant="300" id="hIc-P4-WjH"/>
+                                    <constraint firstItem="q09-U7-cKY" firstAttribute="centerX" secondItem="qwH-4x-24z" secondAttribute="centerX" id="tjh-bN-TeX"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lq7-3W-bPW">
+                                <rect key="frame" x="228" y="320" width="144" height="30"/>
+                                <color key="backgroundColor" red="0.1764705882352941" green="0.58823529411764708" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="me3-ge-mBO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="ANIMATE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="animateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxj-wp-0rk"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGF-Hm-X9c" customClass="AnimationView" customModule="CALayersSwift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="377" width="600" height="223"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="0.1764705882" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fgColor">
+                                        <color key="value" red="0.1764705882" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qwH-4x-24z" secondAttribute="trailing" constant="-20" id="1Fw-H7-nLQ"/>
+                            <constraint firstItem="qwH-4x-24z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Eul-BX-QWw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WGF-Hm-X9c" secondAttribute="trailing" constant="-20" id="O9Z-QX-t8B"/>
+                            <constraint firstItem="qwH-4x-24z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XXU-FD-POK"/>
+                            <constraint firstItem="lq7-3W-bPW" firstAttribute="top" secondItem="q09-U7-cKY" secondAttribute="bottom" constant="80" id="bVN-eT-oh8"/>
+                            <constraint firstItem="lq7-3W-bPW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cK8-uA-C8L"/>
+                            <constraint firstItem="WGF-Hm-X9c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dVh-VJ-1Fo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WGF-Hm-X9c" secondAttribute="bottom" id="fu0-qo-btH"/>
+                            <constraint firstItem="WGF-Hm-X9c" firstAttribute="top" secondItem="lq7-3W-bPW" secondAttribute="bottom" constant="27" id="sI3-Lx-VvN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="WGF-Hm-X9c" id="uFj-TA-2tJ"/>
+                        <outlet property="portrait" destination="q09-U7-cKY" id="JbT-rv-gpq"/>
+                        <outlet property="someButton" destination="lq7-3W-bPW" id="0S5-aj-Ki5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="340" y="367"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="portrait.jpg" width="1240" height="1240"/>
+    </resources>
 </document>

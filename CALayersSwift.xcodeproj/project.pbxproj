@@ -12,6 +12,10 @@
 		3468FC691D366E0200607BF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3468FC671D366E0200607BF8 /* Main.storyboard */; };
 		3468FC6B1D366E0200607BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3468FC6A1D366E0200607BF8 /* Assets.xcassets */; };
 		3468FC6E1D366E0200607BF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3468FC6C1D366E0200607BF8 /* LaunchScreen.storyboard */; };
+		3468FC781D3678BE00607BF8 /* portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3468FC771D3678BE00607BF8 /* portrait.jpg */; };
+		3468FC7A1D36851500607BF8 /* PortraitContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468FC791D36851500607BF8 /* PortraitContainerView.swift */; };
+		347B59E11D37A0770046B829 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347B59E01D37A0770046B829 /* AnimationView.swift */; };
+		347B59E31D37A4630046B829 /* DegreesToRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347B59E21D37A4630046B829 /* DegreesToRadians.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		3468FC6A1D366E0200607BF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3468FC6D1D366E0200607BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3468FC6F1D366E0200607BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3468FC771D3678BE00607BF8 /* portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = portrait.jpg; sourceTree = "<group>"; };
+		3468FC791D36851500607BF8 /* PortraitContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitContainerView.swift; sourceTree = "<group>"; };
+		347B59E01D37A0770046B829 /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		347B59E21D37A4630046B829 /* DegreesToRadians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DegreesToRadians.swift; path = ../DegreesToRadians.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		3468FC621D366E0200607BF8 /* CALayersSwift */ = {
 			isa = PBXGroup;
 			children = (
+				347B59E41D37A48F0046B829 /* Helpers */,
+				3468FC771D3678BE00607BF8 /* portrait.jpg */,
 				3468FC631D366E0200607BF8 /* AppDelegate.swift */,
 				3468FC651D366E0200607BF8 /* ViewController.swift */,
+				3468FC791D36851500607BF8 /* PortraitContainerView.swift */,
+				347B59E01D37A0770046B829 /* AnimationView.swift */,
 				3468FC671D366E0200607BF8 /* Main.storyboard */,
 				3468FC6A1D366E0200607BF8 /* Assets.xcassets */,
 				3468FC6C1D366E0200607BF8 /* LaunchScreen.storyboard */,
 				3468FC6F1D366E0200607BF8 /* Info.plist */,
 			);
 			path = CALayersSwift;
+			sourceTree = "<group>";
+		};
+		347B59E41D37A48F0046B829 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				347B59E21D37A4630046B829 /* DegreesToRadians.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3468FC781D3678BE00607BF8 /* portrait.jpg in Resources */,
 				3468FC6E1D366E0200607BF8 /* LaunchScreen.storyboard in Resources */,
 				3468FC6B1D366E0200607BF8 /* Assets.xcassets in Resources */,
 				3468FC691D366E0200607BF8 /* Main.storyboard in Resources */,
@@ -135,6 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347B59E31D37A4630046B829 /* DegreesToRadians.swift in Sources */,
+				3468FC7A1D36851500607BF8 /* PortraitContainerView.swift in Sources */,
+				347B59E11D37A0770046B829 /* AnimationView.swift in Sources */,
 				3468FC661D366E0200607BF8 /* ViewController.swift in Sources */,
 				3468FC641D366E0200607BF8 /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +312,7 @@
 				3468FC741D366E0200607BF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
